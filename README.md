@@ -15,36 +15,6 @@ This repository contains an implementation of the Firefly Algorithm (FA) for ima
 - **Customizable Parameters**: Easy adjustment of the number of clusters and algorithm parameters.
 - **Visualization**: Outputs the segmented image and a plot of the algorithm's cost evolution.
 
-## Dependencies
-To run the code, you need the following Python libraries:
-
-- `numpy`
-- `matplotlib`
-- `scikit-learn`
-- `scikit-image`
-
-Install the required libraries using pip:
-```bash
-pip install numpy matplotlib scikit-learn scikit-image
-```
-
-## How to Use
-1. Clone this repository:
-   ```bash
-   git clone https://github.com/yourusername/Firefly-Algorithm-Image-Segmentation.git
-   cd Firefly-Algorithm-Image-Segmentation
-   ```
-
-2. Place your input image (`f.jpg`) in the same directory as the script.
-
-3. Run the Python script:
-   ```bash
-   python fa_image_segmentation.py
-   ```
-
-4. View the results:
-   - **Cost Evolution Plot**: Shows the best cost at each iteration.
-   - **Segmented Image**: Displays the original image and its segmented version.
 
 ## Parameters
 You can customize the following parameters in the script:
@@ -55,20 +25,6 @@ You can customize the following parameters in the script:
 - `gamma`: Light absorption coefficient.
 - `beta0`: Attraction coefficient base value.
 - `alpha`: Mutation coefficient.
-
-## Example Output
-### Input Image
-Original image (`f.jpg`):
-![Original Image](example_original.jpg)
-
-### Segmented Image
-Segmented output:
-![Segmented Image](example_segmented.jpg)
-
-### Cost Evolution
-The evolution of the best cost during optimization:
-
-![Cost Evolution](example_cost_plot.jpg)
 
 ## How It Works
 1. **Image Preprocessing**:
@@ -84,14 +40,4 @@ The evolution of the best cost during optimization:
 3. **Segmentation**:
    - Maps clustered indices back to the original image shape.
    - Creates a segmented image by assigning cluster labels to pixels.
-
-## Contributing
-Feel free to fork this repository, make enhancements, and submit a pull request. Contributions are welcome!
-
-## License
-This project is licensed under the MIT License. See the `LICENSE` file for more details.
-
-## Contact
-For questions or feedback, please contact [your email/username].
-```
 
